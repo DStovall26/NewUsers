@@ -4,10 +4,8 @@ pipeline {
     stage('Success') {
       steps {
         echo 'Say Hello'
-        sh '''agent {
-    label \'jdk9\'
-  }'''
-        }
+        sh 'java -version'
       }
     }
   }
+}
