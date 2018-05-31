@@ -4,7 +4,10 @@ pipeline {
     stage('Success') {
       steps {
         echo 'Say Hello'
+        sh '''agent {
+   label \'jdk 9\'
+  }'''
+        }
       }
     }
   }
-}
