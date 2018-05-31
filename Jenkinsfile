@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Say Hello'
         sh '''agent {
-   label \'jdk 9\'
+    label \'jdk9\'
   }'''
         }
       }
