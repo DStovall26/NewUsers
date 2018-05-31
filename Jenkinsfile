@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    label 'jdk 9'
+  }
   stages {
     stage('Success') {
       steps {
